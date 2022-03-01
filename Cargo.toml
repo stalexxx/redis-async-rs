@@ -20,6 +20,7 @@ tokio_02 = { package = "tokio", version = "0.2", features = ["rt-core", "net", "
 tokio_10 = { package = "tokio", version = "1.0", features = ["rt", "net", "time"], optional = true }
 tokio-util_03 = { package = "tokio-util", version = "0.3", features = ["codec"], optional = true }
 tokio-util_06 = { package = "tokio-util", version = "0.6", features = ["codec"], optional = true }
+tokio-util_07 = { package = "tokio-util", version = "0.7", features = ["codec"], optional = true }
 
 [dev-dependencies]
 env_logger = "^0.9"
@@ -31,4 +32,4 @@ tokio_10 = { package = "tokio", version = "1.0", features = ["full"] }
 default = ["tokio10"]
 
 tokio02 = ["bytes_05", "tokio_02", "tokio-util_03"]
-tokio10 = ["bytes_10", "tokio_10", "tokio-util_06"]
+tokio10 = ["bytes_10", "tokio_10", "tokio-util_07"]
